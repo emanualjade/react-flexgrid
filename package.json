@@ -7,6 +7,17 @@
     "lint": "eslint '**/*.js'",
     "lint:fix": "prettier-eslint **/*.js --write"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emanualjade/react-flexgrid.git"
@@ -31,6 +42,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
     "prettier-eslint": "^9.0.0",
     "prettier-eslint-cli": "^5.0.0"
   }
