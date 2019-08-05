@@ -1,0 +1,20 @@
+{
+  "name": "react-flexgrid",
+  "version": "1.0.0",
+  "description": "A react based grid system using flexbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanualjade/react-flexgrid.git"
+  },
+  "keywords": ["react", "grid", "flexbox", "css"],
+  "author": "Emanual Jade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emanualjade/react-flexgrid/issues"
+  },
+  "homepage": "https://github.com/emanualjade/react-flexgrid#readme"
+}
