@@ -2,7 +2,9 @@
   "name": "react-flexgrid",
   "version": "1.0.0",
   "description": "A react based grid system using flexbox",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -51,13 +53,19 @@
     "lint-staged": "^9.2.1",
     "prettier-eslint": "^9.0.0",
     "prettier-eslint-cli": "^5.0.0",
-    "react": "^16.8.6",
     "rimraf": "^2.6.3",
     "rollup": "^1.18.0",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-string": "^3.0.0"
   },
   "dependencies": {
     "rollup-plugin-terser": "^5.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.2"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }

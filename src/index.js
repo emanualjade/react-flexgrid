@@ -1,5 +1,3 @@
-import React from 'react'
-
-const Flexgrid = () => <h1>Flexgrid</h1>
-
-export default Flexgrid
+export * from './Ripple'
+export * from './Ring'
+export * from './Ellipsis'
